@@ -12,37 +12,40 @@ h2 { margin-top: 43px; font-size: 32px; line-height: 36px; color: rgba(0, 0, 0, 
 h2 + p, h2 + blockquote { margin-top: 7px;}
 h3 { margin-top: 36px; font-size: 28px; line-height: 34px; color: rgba(0, 0, 0, .8);}
 h3 + p, h3 + blockquote { margin-top: 6px;}
-
-img { display: block; width: 1020px; margin: 79px auto 0;}
-img + h2 { margin-top: 79px;}
-img + p, img + blockquote, img + ul { margin-top: 77px;}
 article h3 + img { margin-top: 81px;}
 /* article > p, article > blockquote, article > li { margin-top: 29px; font-size: 20px; line-height: 34px;}
-article > blockquote { font-style: italic;}
-article > blockquote::before {
+article > blockquote { font-style: italic;} */
+article ul {list-style-type: disc;
+    content: "•"}
+
+.line { border-left: 3px solid black;
+  margin-left: 0 auto;
+  padding-left: 17px;}
+
+.menubar {display: flex;
+justify-content: space-between;
+align-items: center;
+height: 40px;
+padding: 0 20px;
+border-bottom: 1px solid #aaa;
+box-shadow: 0 3px 4px 1px rgba(0.0.0.3);}
+
+.menubar a {
+  height: 20px;
+  color: #aaa;
+  text-decoration: none;}
+
+.menubar img {}
+
+/* article > blockquote::before {
 content: " ";
 background: black;
 width: 3px;
 height: 100%;
+padding-left: 17px;
 position: absolute;
 display: block;
-top: 0;}*/
-
-article ul {list-style-type: disc;
-    content: "•"}
-
-
-
-
-
-
-
-
-
-
-
-
-
+top: 0;}
 
 /*blockquote::before {
 content: " ";
