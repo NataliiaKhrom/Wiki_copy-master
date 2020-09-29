@@ -4,3 +4,4 @@
 @import 'layout.css';
 @import "sidebar.css";
 @import "content.css";
+@@import "javascripts/jquery-3.5.1.js";
