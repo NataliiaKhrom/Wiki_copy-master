@@ -3,20 +3,15 @@
 * {box-sizing: border-box;}
 body { -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-family: 'PT Sans', sans-serif;}
 a { color: inherit;}
+
+/* article */
+
 h1, h2, h3, p, ul, blockquote { width: 700px; margin: 0 auto;}
 h1, h2, h3 { font-family: 'PT Sans Caption', sans-serif; font-weight: bold;}
 h1 { margin-top: 67px; font-size: 38px; line-height: 45px;}
-h1 + p { margin-top: 8px; font-family: 'PT Sans Caption', sans-serif; font-size: 22px; line-height: 32px; color: rgba(0,0,0,.4);}
-h1 + p + p { margin-top: 30px;}
-h2 { margin-top: 43px; font-size: 32px; line-height: 36px; color: rgba(0, 0, 0, .8);}
-h2 + p, h2 + blockquote { margin-top: 7px;}
-h3 { margin-top: 36px; font-size: 28px; line-height: 34px; color: rgba(0, 0, 0, .8);}
-h3 + p, h3 + blockquote { margin-top: 6px;}
-article h3 + img { margin-top: 81px;}
-/* article > p, article > blockquote, article > li { margin-top: 29px; font-size: 20px; line-height: 34px;}
-article > blockquote { font-style: italic;} */
-article ul {list-style-type: disc;
-    content: "•"}
+
+
+/*classes*/
 
 .line { border-left: 3px solid black;
   margin-left: 0 auto;
@@ -36,43 +31,3 @@ box-shadow: 0 3px 4px 1px rgba(0.0.0.3);}
   text-decoration: none;}
 
 .menubar img {}
-
-/* article > blockquote::before {
-content: " ";
-background: black;
-width: 3px;
-height: 100%;
-padding-left: 17px;
-position: absolute;
-display: block;
-top: 0;}
-
-/*blockquote::before {
-content: " ";
-background: black;
-width: 3px;
-height: 100%;
-position: absolute;
-display: block;
-left: -17px;
-top: 0;}*/
-
-
-
-
-/*.line { border-left: 3px solid black;
-  margin-left: 0 auto;
-  padding-left: 17px;
-  font-style: italic;}
-
-  li {
-  list-style: none;
-  list-style-position: outside;
-  font-size: 22px;
-  line-height: 34px;
-  text-indent: 16px;
-  margin-bottom: 40px;}
- li::before {
-  content: "•";
-  padding-right: 14px;
-  color: black;}
