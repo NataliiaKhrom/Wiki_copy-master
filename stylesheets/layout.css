@@ -17,7 +17,7 @@ h1 { margin-top: 67px; font-size: 38px; line-height: 45px;}
   margin-left: 0 auto;
   padding-left: 17px;}
 
-/* .menubar {display: flex;
+.menubar {display: flex;
 justify-content: space-between;
 align-items: center;
 height: 40px;
@@ -30,4 +30,6 @@ box-shadow: 0 3px 4px 1px rgba(0.0.0.3);}
   color: #aaa;
   text-decoration: none;}
 
-.menubar img {} */
+.menubar a img {
+  height: 100%;
+  width: auto;}
