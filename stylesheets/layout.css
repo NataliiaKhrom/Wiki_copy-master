@@ -20,10 +20,11 @@ h1 { margin-top: 67px; font-size: 38px; line-height: 45px;}
 .menubar {display: flex;
 justify-content: space-between;
 align-items: center;
-height: 40px;
+height: 50px;
 padding: 0 20px;
-border-bottom: 1px solid #aaa;
-box-shadow: 0 3px 4px 1px rgba(0.0.0.3);}
+/* border-bottom: 1px solid #aaa; */
+box-shadow: 0 2px 4px 1px rgba(0,0,0,.1);
+background: white;}
 
 .menubar a {
   height: 20px;
