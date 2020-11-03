@@ -15,7 +15,7 @@
 /* iPad */
 
 @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
-article > * { width: calc(100% - 40px); }
+article * { width: calc(100% - 40px); }
 }
 
 
@@ -27,7 +27,7 @@ article > * { width: calc(100% - 40px); }
 }*/
 
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
-  article > * { width: calc(100% - 40px); }
+  article * { width: calc(100% - 40px); }
 }
 
   /* Both */
@@ -35,3 +35,5 @@ article > * { width: calc(100% - 40px); }
 @media all and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
 	.sidebar { display: none; }
 }
+
+/* ???? */
