@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+
+      <style media="screen">
+
+      .move-area{/*normally use body*/
+  width: 100vw;
+  height: 100vh;
+  padding: 10% 45%;
+}
+.container {
+  width: 100%;
+}
+.eye {
+  position: relative;
+  display: inline-block;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  background: #CCC;
+}
+.eye:after { /*pupil*/
+  position: absolute;
+  bottom: 17px;
+  right: 10px;
+  width: 10px;
+  height: 10px;
+  background: #000;
+  border-radius: 50%;
+  content: " ";
+}
+
+.redbox {
+  position: absolute;
+  display: block;
+  height: 20px;
+  width: 20px;
+  background-color:rgb(255, 0, 0);
+}
+
+
+
+      </style>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+      <script type="text/javascript">
+      $(document).ready(function(){
+          $(".move-area").mousemove(function(event) {
+            let eye = $(".eye");
+            let x = (eye.offset().left) + (eye.width() / 2);
+            let y = (eye.offset().top) + (eye.height() / 2);
+            let rad = Math.atan2(event.pageX - x, event.pageY - y);
+            let rot = (rad * (180 / Math.PI) * -1) + 180;
+            eye.css({
+              '-webkit-transform': 'rotate(' + rot + 'deg)',
+              '-moz-transform': 'rotate(' + rot + 'deg)',
+              '-ms-transform': 'rotate(' + rot + 'deg)',
+              'transform': 'rotate(' + rot + 'deg)'
+            });
+          });
+
+
+     let xPrev = 0;
+       $(document).mousemove(function(e){
+           xPrev<e.pageX ? $('#lr').html("right") : $('#lr').html("left");
+           xPrev=e.pageX;
+          $('#status').html(e.pageX +', '+ e.pageY);
+          let rebcol = parseInt(e.pageX / 2)
+          let rebcol2 = parseInt(e.pageY / 2)
+          $(".redbox").css(
+            'background-color' ,
+            'rgb('+rebcol+', '+rebcol2+', 0)'
+          )
+       });
+
+       let myArray = [
+       "Apples",
+       "Bananas",
+       "Pears"
+     ];
+
+     let randomItem = myArray[Math.floor(Math.random()*myArray.length)]
+
+     let randa = myArray.length
+     let randb = Math.random()
+    let randc = Math.floor(randa * b)
+    let randomItem = myArray [randc]
+
+     //  document.body.innerHTML = randomItem;//
+    $('#rand').html(randomItem +  ' = ' + randc + ' = ' + randb + ' = ' + randa +);
+
+    })
+
+
+
+
+
+
+
+      </script>
+
+
+
+  </head>
+
+
+  <body>
+
+  <div id='rand'></div>
+
+<section class="move-area">
+  <div class='container'>
+    <div class='eye'></div>
+    <div class='eye'></div>
+    <div id="status">0,0</div>
+    <div id="lr"></div>
+    <div class='redbox'></div>
+
+  </div>
+</section>
+
+
+
+  </body>
+</html>
